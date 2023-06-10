@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/index.css">
+	<link rel="shortcut icon" href="assets/img/Logo - Mix.png" type="image/x-icon">
+	<title>Atenciones</title>
+</head>
+
+<body>
+	<header>
+		<div class="div-img">
+			<img src="assets/img/LogoTipo - Black.png" alt="LogoTipo">
+		</div>
+	</header>
+
+	<div class="container">
+		<h1>Atención Nutricional</h1>
+
+		<div class="form-container">
+			<h2>Registro de usuarios</h2>
+			<form id="create-form">
+				<input type="text" id="name-input" placeholder="Nombre" required>
+				<input type="text" id="rut-input" placeholder="Rut" required>
+				<input type="text" id="edad-input" placeholder="Edad" required>
+				<select name="select">
+					<option value="value1" selected>Sexo</option>
+					<option value="value1">Femenino</option>
+					<option value="value2">Masculino</option>
+				</select>
+				<input type="text" id="diagnostico-input" placeholder="Diagnóstico" required>
+				<select name="select">
+					<option value="value1" selected>Tipo de atención</option>
+					<option value="value1">Primera consulta</option>
+					<option value="value2">Control</option>
+				</select>
+				<textarea id="description-input" placeholder="Descripción atención" required></textarea>
+				<button type="submit">Registrar</button>
+			</form>
+		</div>
+
+		<div>
+			<h2>Usuarios</h2>
+			<ul id="element-list"></ul>
+		</div>
+	</div>
+
+	<script src="assets/js/index.js"></script>
+</body>
+
+</html>
